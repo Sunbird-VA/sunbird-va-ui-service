@@ -1,0 +1,14 @@
+<app-default-shared-header></app-default-shared-header>
+
+<loader *ngIf="showLoader" [isDataLoaded]="tableData" ></loader>
+
+<div class="table-container">
+    <ncf-table *ngIf="tableData" [dataSource]="tableData" (emitPageIndex)="handlePageId($event)" [totalPages]="totalPages" [pageSize]="10"></ncf-table>
+</div>
+
+
+<div style="margin-bottom: 30px; text-align: center;" *ngIf="!showLoader && !tableData?.length">
+    <div>
+        <p>No data</p>
+    </div>
+</div>

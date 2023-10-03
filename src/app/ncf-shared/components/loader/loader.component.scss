@@ -1,0 +1,15 @@
+.background {
+    filter: blur(6px);
+    height: 50%;
+    position: relative;
+    background: #f1f3f56e;
+}
+.spinner__loading {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    right: 100px;
+  }

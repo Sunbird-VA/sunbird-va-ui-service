@@ -1,0 +1,121 @@
+.container {
+    margin-top: 2%;
+
+
+    .section1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .mobile_view_logos {
+            display: flex;
+        }
+    }
+
+    .section2 {
+        color: white;
+        padding: 20px;
+        // font-size: 18px;
+        font-family: 'proxima_nova_rgregular';
+        min-height: 300px;
+        margin: 15px;
+        background: rgba(2, 78, 157, 0.5);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.9px);
+        -webkit-backdrop-filter: blur(6.9px);
+        border: 1px solid rgba(2, 78, 157, 0.2);
+    }
+
+    .text-align-center {
+       text-align: center;
+    }
+}
+
+.blockquote {
+    margin-left: 20px;
+}
+
+.web-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    width: 250px;
+    height: 40px;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px black;
+    font-family: "proxima_nova_rgregular", Arial, sans-serif;
+    margin: auto;
+    // font-size: 18px;
+    // font-style: italic;
+    font-weight: bold;
+    position: relative;
+    color: black;
+}
+
+
+@media only screen and (max-width: 575px) {
+    .mobile-align {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100% !important;
+    }
+
+    .mobile-width {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 95% !important;
+    }
+
+    .mobile_view_logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        margin: 6% 0;
+    }
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .mobile-width {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 95% !important;
+    }
+
+    .mobile_view_logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        margin: 6% 0;
+    }
+
+    .container {
+        padding: 0%;
+
+        .section1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+}

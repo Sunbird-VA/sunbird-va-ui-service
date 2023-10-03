@@ -1,0 +1,166 @@
+<div class="home_wrapper">
+  <div class="container mt-3 mb-3">
+    <div class="navbar_mobile">
+      <div>
+        <img src="./assets/img/NCERt.png" style="width: 70px" />
+        <img src="./assets/img/NCF_logo.svg" style="width: 70px" />
+      </div>
+      <div class="login_btn_wrapper_mobile">
+        <button (click)="handleLogin()" class="login_btn">Login</button>
+      </div>
+    </div>
+    <div class="hero__wrap">
+      <div class="hero__content_wrapper">
+        <div class="hero_images">
+          <img src="./assets/img/NCERt.png" style="width: 70px" />
+          <img src="./assets/img/NCF_logo.svg" style="width: 70px" />
+        </div>
+        <div class="hero__content">
+          <h1>NCF Saarathi</h1>
+          <p>
+            <!-- Ask NCF Saarathi - for National Education Policy 2020, National
+            Curriculum Framework (Foundational Stage and School Education),
+            Jaadui Pitara- Learning Teaching material for Foundation Stage,
+            Teachers’ Handbook --->
+
+            Ask NCF Saarathi about National Education Policy 2020, National Curriculum Framework (Foundational Stage and School Education)
+          </p>
+          <p>
+            Prepare for a thrilling educational journey with the NCF Saarathi,
+            your AI-powered guide to understanding education policy and
+            curriculum frameworks. This engaging tool is designed to help you
+            make your learning journey fun and instructive.
+          </p>
+          <button (click)="handleLogin()">Get Started</button>
+        </div>
+      </div>
+      <div class="hero__wrapper">
+        <div class="hero_img__wrapper">
+          <div class="hero_img_container">
+            <h4>Ask me anything about NCF and NEP!</h4>
+            <img src="./assets/images/hero_image.svg" alt="ai chat bot" />
+          </div>
+        </div>
+        <div class="text-align-center login_btn_wrapper">
+          <button (click)="handleLogin()" class="login_btn">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="landing_section_wrapper">
+    <div class="landing_img_wrap">
+      <div class="landing_img_wrapper">
+        <div class="landing_img_container"></div>
+      </div>
+      <img src="./assets/images/landing_image_phone.svg" alt="" />
+    </div>
+    <div class="landing_content_wrapper">
+      <div class="landing_content_container">
+        <h1>Meet NCF Saarathi</h1>
+        <p>
+          A reliable AI-powered virtual assistant here to help with your needs.
+          It provides detailed information on the National Education Policy,
+          National Curriculum Framework for Foundational Stage (NCF-FS), and
+          National Curriculum Framework for School Education (NCF-SC).
+        </p>
+        <p>
+          NCF Saarathi is a useful tool designed for those seeking to understand
+          more about the policy and the frameworks in a straightforward and
+          user-friendly manner.
+        </p>
+        <div class="highlights_container">
+          <span>Questions Asked</span>
+          <span>{{ totalQuestions }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="feature_section_wrapper">
+    <div class="feature_content_wrapper">
+      <div class="feature_content_container">
+        <h3>Step into the world of captivating questions like these :</h3>
+        <ul>
+          <li>
+            I am looking for a fun, effective activity to teach letter
+            recognition to a Balvatika class of 20 children
+          </li>
+          <li>
+            How to integrate teaching mathematics and music in middle stages ?
+          </li>
+          <li>How to use observation to assess in play based pedagogy?</li>
+          <li>
+            Give me a forty minute lesson plan to teach addition of two digit
+            numbers ?
+          </li>
+          <li>
+            My child is reading 5-6 sentences but I am not sure about their
+            comprehension? How to identify any gaps and learn about exciting
+            activities to fill them!
+          </li>
+        </ul>
+        <article>
+          <p>
+            The NCF Saarathi is designed to answer best in english language. NCF
+            Saarathi will be ready for other indian languages, once NCF and NEP
+            documents are translated into Indian languages. Indian language
+            capabilities are provided as experimental capabilities to help
+            disseminate.
+          </p>
+          <p>
+            You are advised to fall back onto english inference and ultimately
+            onto original policy and framework documents in all situations. This
+            is an experimental effort to disseminate NCF to all.
+          </p>
+          <p>
+            Join us on this experimental journey, as we strive to disseminate
+            the NCF to all, leveraging latest AI technology, igniting curiosity
+            and fostering an enriching learning experience!
+          </p>
+        </article>
+      </div>
+    </div>
+    <div class="feature_img_wrap">
+      <img src="./assets/images/landing_image_laptop.svg" alt="" />
+      <div class="feature_img_overlay">
+        <div class="feature_img_container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="subscribe-text">Subscribe to our newsletter for the latest updates and insights</div>
+  <div class="subscribe-container">
+   
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label class="email-label">Email</mat-label>
+        <input matInput placeholder="Enter your email..." value="subscribedEMail"  [formControl]="subscribedEMail">
+      </mat-form-field>
+    </form>
+    <button mat-button color="green" (click)="handleSubscription()">Subscribe</button>
+  </div>
+
+  <footer class="home_footer">
+    <span style="display: none;"  (click)="handleTermsNavigation()" >Click to view NCF Saarathi Terms and conditions</span>
+  </footer>
+</div>
+
+<!-- Gooey Effect Svg for Clip Path -->
+<svg
+  style="visibility: hidden; position: absolute"
+  width="0"
+  height="0"
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+>
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+      <feColorMatrix
+        in="blur"
+        mode="matrix"
+        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 15 -9"
+        result="goo"
+      />
+      <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+    </filter>
+  </defs>
+</svg>
