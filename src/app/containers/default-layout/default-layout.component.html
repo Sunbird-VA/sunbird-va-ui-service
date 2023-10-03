@@ -1,0 +1,140 @@
+<!--sidebar-->
+<!-- <c-sidebar
+  #sidebar="cSidebar"
+  class="d-print-none sidebar sidebar-fixed"
+  id="sidebar"
+  visible
+>
+  <c-sidebar-brand
+    [brandFull]="{
+      src: 'assets/img/brand/coreui-angular.png',
+      width: 200,
+      height: 46,
+      alt: 'CoreUI Logo'
+    }"
+    [brandNarrow]="{
+      src: 'assets/img/brand/coreui-signet-white.svg',
+      width: 46,
+      height: 46,
+      alt: 'CoreUI Logo'
+    }"
+    routerLink="./"
+  >
+  </c-sidebar-brand>
+    <perfect-scrollbar [config]="perfectScrollbarConfig">
+   [perfectScrollbar]="perfectScrollbarConfig"
+  <c-sidebar-nav
+    [navItems]="navItems"
+  >
+  </c-sidebar-nav>
+    </perfect-scrollbar>
+  <c-sidebar-toggler
+    *ngIf="!sidebar.narrow"
+    toggle="unfoldable"
+    cSidebarToggle="sidebar"
+  ></c-sidebar-toggler>
+</c-sidebar> -->
+
+<!--main-->
+<div class="wrapper d-flex flex-column" style="
+width: 40%;
+float: left;
+margin-top: 2%;
+margin-bottom: 2%;
+margin-left: 2%;
+
+" class="mobile-align">
+<div style="display: flex;" class="mobile_view" >
+  <img src="./assets/img/NCERt.png" style="width: 100px;"> 
+  <img src="./assets/img/NCF_logo.svg" style="width: 150px;"> 
+  <p class="blockquote">Ask NCF Saarathi -  for National Education Policy 2020, National Curriculum Framework (Foundational Stage and School Education), Jaadui Pitara- Learning Teaching material for Foundation Stage,  Teachers’ Handbook
+  </p>
+</div>
+  <div style="color: white;
+  padding: 20px;
+  /* font-size: 1rem; */
+  /* font-family: 'Proxima Nova'; */
+  min-height: 450px;
+  margin-top: 15px;
+  background: rgba(2, 78, 157, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(2, 78, 157, 0.2);" class="mobile_view">
+
+The NCF Virtual Chatbot Is an advanced AI assistant designed to answer queries about the National Curriculum Framework for Foundational stage (NCF-FS), National Curriculum Framework for School Education(NCF-SE),National Education Policy, and Jaadui Pitara. 
+<br/>
+<br/>
+<b>Sample Questions :</b>
+<br/>
+<ul>
+  <li>Child is able to read 5-6 sentences but how to check her comprehension and if there are gaps what activities to do?</li>
+  <li>Explain Panchkosh in a simple language to class 8 children.</li>
+  <li>What are the three most important things for a teacher to know if they want to implement NCF in class?</li>
+  <li>Suggest an activity for teaching on letter recognition for Balvatika class of 20 children.</li>
+</ul>
+<b style="font-weight: 900; font-size: 15px; font-style: italic;">Please add phrases such as "Foundational stage" or "School education" to make your question specific to two policy documents.</b>
+<br>
+This is an experimental effort to disseminate NCF to all
+<div class="row mt-3"  *ngIf="totalHits > 0" >
+  <div class="col-xl-6 col-lg-6">
+    <div class="card card-stats mb-4 mb-xl-0">
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <h5 class="card-title text-uppercase text-success mb-0">Questions Asked</h5>
+            <span class="h6 font-weight-bold mb-0" style="color: black;">#{{ questionAsked }}</span>
+          </div>
+        </div>
+        <p class="mt-1 mb-0 text-muted text-sm">
+          <span class="text-nowrap">Since 5 July 2023</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-6 col-lg-6">
+    <div class="card card-stats mb-4 mb-xl-0">
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <h5 class="card-title text-uppercase text-success mb-0">Web Sessions</h5>
+            <span class="h6 font-weight-bold mb-0" style="color: black;">#{{ totalHits }}</span>
+          </div>
+        </div>
+        <p class="mt-1 mb-0 text-muted text-sm">
+          <span class="text-nowrap">Since 5 July 2023</span>
+        </p>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+</div>
+</div>
+<div class="wrapper d-flex flex-column" style="
+/* From https://css.glass */
+
+width: 50%;
+float: right;
+margin-top: 2%;
+margin-bottom: 2%;
+margin-right: 2%;
+" class="mobile-width">
+  <!--app-header-->
+  <app-default-header class="d-print-none header header-sticky" position="sticky" sidebarId="sidebar" style="
+  background: rgba(2, 78, 157, 0.5);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(2, 78, 157, 0.2);"></app-default-header>  <!--app-body-->
+  <!-- <div class="body flex-grow-1 px-3"> -->
+    <!-- <c-container breakpoint="lg" class="h-auto"> -->
+      <router-outlet></router-outlet>
+    <!-- </c-container> -->
+  <!-- </div> -->
+  <!--app footer-->
+  <!-- <app-default-footer></app-default-footer> -->
+</div>

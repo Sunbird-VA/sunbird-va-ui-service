@@ -1,0 +1,100 @@
+.limitations-container {
+    .columns-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+
+        .column {
+            margin: 1rem 0;
+            width: 26%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .column-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+
+            svg {
+                width: 25px;
+                height: 25px;
+            }
+            .column-title {
+                padding: 10px 0;
+            }
+        }
+
+        .column-data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 10px;
+
+            .column-row {
+                border: 1px solid #efe9e936;
+                min-height: 5.5rem;
+                width: 100%;
+                background: #dad9d94f;
+                margin: 6px 0;
+                border-radius: 5px;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-height: 10rem;
+                // font-size: 16px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+    .limitations-container {
+
+            .column {
+                width: 100% ;
+                margin: 0;
+                .column-data {
+                    margin: 0px 10px !important;
+                    
+                    }
+                .column-row {
+                    min-height: auto;
+                    padding: 12px;
+                    max-height: none;
+                }
+            }
+        
+    } 
+}
+
+@media only screen and (max-width: 700px) {
+    .limitations-container {
+        .columns-list {
+            flex-direction: column;
+            align-items: center;
+
+    
+            .column {
+                width: 100%;
+                margin: 0;
+
+                .column-data {
+                margin: 0;
+                }
+                .column-row {
+                    min-height: auto;
+                    padding: 12px;
+                    max-height: none;
+                }
+            }
+        }
+    }
+}

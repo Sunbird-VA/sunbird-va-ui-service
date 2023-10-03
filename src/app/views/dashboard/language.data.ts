@@ -1,0 +1,15 @@
+export const Languages = [
+  { id: 'en', value: 'English' },
+  { id: 'bn', value: 'Bengali' },
+  { id: 'gu', value: 'Gujarati' },
+  { id: 'hi', value: 'Hindi' },
+  { id: 'kn', value: 'Kannada' },
+  { id: 'ml', value: 'Malayalam' },
+  { id: 'mr', value: 'Marathi' },
+  { id: 'or', value: 'Oriya' },
+  { id: 'pa', value: 'Punjabi' },
+  { id: 'sa', value: 'Sanskrit' },
+  { id: 'ta', value: 'Tamil' },
+  { id: 'te', value: 'Telugu' },
+  { id: 'ur', value: 'Urdu' },
+];

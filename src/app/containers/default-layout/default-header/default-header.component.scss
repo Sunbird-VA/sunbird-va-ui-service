@@ -1,0 +1,20 @@
+img.imgWidth{
+    width: 300px;
+ }
+
+.headerbg {
+    /* From https://css.glass */
+background: rgba(2, 78, 157, 0.5);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.9px);
+-webkit-backdrop-filter: blur(6.9px);
+border: 1px solid rgba(2, 78, 157, 0.2);
+}
+
+@media only screen and (max-width: 575px) {
+img.imgWidth{
+    width: 200px !important;
+ }
+}
+

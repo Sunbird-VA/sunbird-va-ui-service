@@ -1,0 +1,56 @@
+.stats{
+    display: block;
+    margin: 5px;
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(59, 56, 56);
+    float: right;
+    background-color: white;
+    width: 9rem;
+    border-radius: 12px;
+    padding: 15px;
+    // font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background: linear-gradient(145deg, #209dee 0%, white 100%);
+}
+
+@media only screen and (max-width: 575px) {
+    .mobile-align {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .mobile_view {
+        display: none !important;
+    }
+    .mobile-width {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 95% !important;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .mobile-align {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .mobile_view {
+        display: none !important;
+    }
+    .mobile-width {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 95% !important;
+    }
+}
